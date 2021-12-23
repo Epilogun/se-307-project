@@ -1,2 +1,4 @@
 sqlalchemy
 psycopg2
+kivy[base] 
+kivy_examples
