@@ -1,6 +1,6 @@
 # Requirements for project
 ## PostgreSQL 13.5 [Link](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
-## Phyton 3.10.1 [Link](https://www.python.org/ftp/python/3.10.1/python-3.10.1-amd64.exe)
+## Phyton 3.8.10 [Link](https://www.python.org/ftp/python/3.8.10/python-3.8.10-embed-amd64.zip)
 !!Please check environment column for accesing pyhton commands.
 
 

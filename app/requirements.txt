@@ -1,4 +1,11 @@
 sqlalchemy
 psycopg2
+Cython>=0.24
+sphinx==1.7.9
+sphinxcontrib-actdiag
+sphinxcontrib-blockdiag
+sphinxcontrib-nwdiag
+sphinxcontrib-seqdiag
 kivy[base] 
 kivy_examples
+
