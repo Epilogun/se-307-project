@@ -8,7 +8,7 @@
 ## On app folder 
 python -m venv virtual-env
 For Windows:
-source "virtual-env/bin/activate"
+source "virtual-env/scripts/activate"
 pip install -r requirements.txt
 For Linux/MacOS
 source virtual-env/bin/activate
@@ -16,3 +16,5 @@ pip install -r requirements.txt
 
 # Run
 python -u app.py
+# Run UI
+python -u kivy.py
