@@ -6,6 +6,5 @@ sphinxcontrib-actdiag
 sphinxcontrib-blockdiag
 sphinxcontrib-nwdiag
 sphinxcontrib-seqdiag
-kivy[base] 
-kivy_examples
+kivy
 
