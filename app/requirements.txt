@@ -1,10 +1,7 @@
 sqlalchemy
 psycopg2
+pandas
 Cython>=0.24
 sphinx==1.7.9
-sphinxcontrib-actdiag
-sphinxcontrib-blockdiag
-sphinxcontrib-nwdiag
-sphinxcontrib-seqdiag
 kivy
 
