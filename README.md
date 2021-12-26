@@ -8,10 +8,10 @@
 ## On app folder 
 python -m venv virtual-env
 For Windows:
-source "venv/scripts/activate"
+source "virtual-env/scripts/activate"
 pip install -r requirements.txt
 For Linux/MacOS
-source venv/bin/activate
+source virtual-env/bin/activate
 pip install -r requirements.txt
 
 # Run
