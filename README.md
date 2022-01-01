@@ -15,5 +15,5 @@ source virtual-env/bin/activate
 pip install -r requirements.txt
 
 # Run
-## On app/gui/images folder
+## On app/gui/images folder:
 python -u main.py
