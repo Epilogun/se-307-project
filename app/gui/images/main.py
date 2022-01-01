@@ -44,14 +44,11 @@ class DBApp(App):
 
     def callback_create_table(self, event):
         create_table()
-        print("Table is created.")
 
     def callback_delete_table(self, event):
         delete_table()
-        print("Table is deleted.")
     
     def callback_insert_table(self, event):
         insert_to_table()
-        print("Inserted.")
-        
+
 DBApp().run()

@@ -18,3 +18,15 @@ thes_abs = TextInput(hint_text = "Abstract",
                             background_color =(1, 1, 1, 1),
                             size_hint = (0.5, 0.06),
                             multiline = False)
+                    
+thes_type = TextInput(hint_text = "Thesis Type",
+                            pos = (30, 460),
+                            background_color =(1, 1, 1, 1),
+                            size_hint = (0.5, 0.06),
+                            multiline = False)
+
+thes_year = TextInput(hint_text = "Year",
+                            pos = (30, 460),
+                            background_color =(1, 1, 1, 1),
+                            size_hint = (0.5, 0.06),
+                            multiline = False)
