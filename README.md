@@ -15,6 +15,5 @@ source virtual-env/bin/activate
 pip install -r requirements.txt
 
 # Run
-python -u app.py
-# Run UI
-python -u kivy.py
+## On app/gui/images folder
+python -u main.py
