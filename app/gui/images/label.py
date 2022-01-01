@@ -10,9 +10,9 @@ lbl = Label(text = "[b]Graduate Thesis System Database Manager[/b]",
 
 def infos(myText):
     lbl2 = Label(text = myText, 
-                    font_size ='20sp',
-                    color =[1, 0, 1, 1],
-                    pos = (-105, 100))
+                font_size ='20sp',
+                color =[1, 0, 0, 1],
+                pos = (-205, 100))
     list_info(lbl2)
 
 def list_info(x):

@@ -12,11 +12,16 @@ from dbsys import create_table, delete_table, insert_to_table, read_table
 Window.clearcolor = (0.1, 0.6, 0.2, 0.6)
 
 class DBApp(App):
+
     def build(self):
         self.img = Image(source ='user.png')
         self.img.size_hint_x = 0.1
         self.img.size_hint_y = 0.1
-        self.img.pos = (183, 314)
+        self.img.pos = (181, 314)
+        self.ext = Image(source ='exit.png')
+        self.ext.size_hint_x = 0.06
+        self.ext.size_hint_y = 0.06
+        self.ext.pos = (740, 550)
         btn.bind(on_press = self.callback)
         btn2.bind(on_press = self.callback_create_table)
         btn3.bind(on_press = self.callback_delete_table)
@@ -26,8 +31,9 @@ class DBApp(App):
         username.foreground_color = (1,0,0,1)
         screen.add_widget(username)
         screen.add_widget(self.img)
+        screen.add_widget(self.ext)
         screen.add_widget(btn)
-        return screen 
+        return screen
 
     def callback(self, event):
         if username.text.lower() == "admin" or username.text.lower() == "volkan":

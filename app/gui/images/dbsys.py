@@ -25,11 +25,11 @@ current_thes_year = ""
 
 thesis = Table(
             "thesis", meta,
-            Column('THES_ID', Integer, primary_key = True),
-            Column('THES_TITLE', String(20)), 
-            Column('THES_ABS', String(50)), 
-            Column('THES_TYPE', String(20)),
-            Column('THES_YEAR', Integer)
+            Column('ID', Integer, primary_key = True),
+            Column('TITLE', String(20)), 
+            Column('ABSTRACT', String(50)), 
+            Column('TYPE', String(20)),
+            Column('YEAR', Integer)
         )
 
 def create_table():
