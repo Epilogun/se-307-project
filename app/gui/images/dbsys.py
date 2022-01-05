@@ -3,7 +3,7 @@ from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String
 from popup import show_popup2, show_popup3, show_popup4, show_popup5
 from user import thes_title, thes_abs, thes_type, thes_year
 from scr import screen
-from label import infos
+from label import infos, delete_lbl
 from kivy.uix.image import Image
 import pandas as pd
 
@@ -32,6 +32,15 @@ thesis = Table(
             Column('YEAR', Integer)
         )
 
+thesis2 = Table(
+            "thesis2", meta,
+            Column('ID', Integer, primary_key = True),
+            Column('TITLE', String(20)), 
+            Column('ABSTRACT', String(50)), 
+            Column('TYPE', String(20)),
+            Column('YEAR', Integer)
+        )
+
 def create_table():
     thesis.create(db, checkfirst = True)
     print("Table is created.")
@@ -41,7 +50,7 @@ def delete_table():
     try:
         thesis.drop(db)
         bground = Image(source ='background.jpg')
-        bground.pos = (-105, -100)
+        bground.pos = (-200, -100)
         screen.add_widget(bground)
         print("Table is deleted.")
         show_popup3()
@@ -104,6 +113,9 @@ def read_table(self):
     except:
         show_popup5()
 
+def clear_table(self):
+    delete_lbl()
+
 def inserts():
     global current_thes_name
     global current_thes_abs
@@ -121,3 +133,11 @@ def inserts():
     query = "INSERT INTO thesis VALUES ('{}','{}','{}','{}','{}')".format(thes_counter, current_thes_name, current_thes_abs, current_thes_type, current_thes_year)
     cnt.execute(query)
     thes_counter += 1
+
+def order_by(self):
+    thesis2.create(db, checkfirst = True)
+    query = 'INSERT INTO thesis2 SELECT * FROM "thesis" ORDER BY "YEAR"'
+    query2 = 'ALTER TABLE thesis2 RENAME TO thesis'
+    cnt.execute(query)
+    thesis.drop(cnt)
+    cnt.execute(query2)
