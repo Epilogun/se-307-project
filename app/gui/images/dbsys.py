@@ -49,9 +49,6 @@ def create_table():
 def delete_table():
     try:
         thesis.drop(db)
-        bground = Image(source ='background.jpg')
-        bground.pos = (-200, -100)
-        screen.add_widget(bground)
         print("Table is deleted.")
         show_popup3()
         
